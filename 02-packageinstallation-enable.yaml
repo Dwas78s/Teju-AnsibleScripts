@@ -1,5 +1,6 @@
 - name: install and enable nginx
   hosts: web
+  become: yes
   tasks:
     - name: install nginx
       ansible.builtin.dnf:
@@ -10,4 +11,3 @@
         name: nginx
         state: started
         enabled: yes
-        
