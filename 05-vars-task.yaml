@@ -5,12 +5,12 @@
     TRAINER: "SHIVA"
     DURATION: "120HRS"
   tasks: 
-    -name: print override information
+    - name: print override information
      vars: #Tasklevel variables
       COURSE: "Terrafrom"
     ansible.builtin.debug:
       msg: "I am learing {{COURSE}} from {{TRAINER}} duration of {{DURATION}}"
-    -name: print playlevel
+    - name: print playlevel
      ansible.builtin.debug:
       msg: "I am learing {{COURSE}} from {{TRAINER}} duration of {{DURATION}}"
     
